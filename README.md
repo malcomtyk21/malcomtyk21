@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hi, I’m Malcom Tan, a computing undergraduate at NUS with a strong passion for full-stack development and data engineering. I enjoy building scalable web applications and data-driven solutions that bridge clean design with robust backend systems. My projects range from developing a collaborative calendar app (GroupSync) with Next.js, React, Supabase, and Tailwind CSS, to creating interactive dashboards powered by Flask, PlotlyJS, and SQL databases. Skilled in Python, JavaScript, and SQL, I’m eager to grow as a developer by contributing to impactful projects in web development, data pipelines, and AI-driven systems.
+Hi, I’m Malcom, a computing undergraduate at NUS with a strong passion for full-stack development and data engineering. I enjoy building scalable web applications and data-driven solutions that bridge clean design with robust backend systems. My projects range from developing a collaborative calendar app (GroupSync) with Next.js, React, Supabase, and Tailwind CSS. I’m eager to grow as a developer by contributing to impactful projects in web development, data pipelines, and AI-driven systems.
 
 
 ## 🌐 Socials:
