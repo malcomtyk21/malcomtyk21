@@ -1,236 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malcom</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=language" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malcom Tan — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-    <header class="site-header">
-        <nav class="nav container">
-            <!-- <div class="brand"><img src="images/logo.png" alt="Malcom Tan" /></div> -->
-            <ul class="menu">
-                <li><a href="#experiences">Experiences & Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Malcom Tan</a>
 
-    <main>
-        <section class="header container">
-            <div class="hero-grid">
-                <div class="hero-media">
-                    <div class="portrait-placeholder" role="img" aria-label="Portrait placeholder"><img src="./images/Portrait.jpeg" alt="Portrait of Malcom"/></div>
-                </div>
-                <div class="hero-copy">
-                    <h1 class="hero-title">Hey <span class="wave" aria-hidden="true">👋</span>!</h1>
-                    <p class="hero-text">
-                        I’m Malcom. An aspiring software engineer and student at the National University of Singapore
-                        (NUS).
-                    </p>
-                    <br>
-                    <p class="hero-text">
-                        You can find my socials:
-                    </p>
-                    <a class="social-btn" href="https://github.com/malcomtyk21" aria-label="GitHub" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                    d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.11.8-.25.8-.56v-2.08c-3.26.71-3.95-1.57-3.95-1.57-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.22 1.8 1.22 1.04 1.78 2.73 1.26 3.4.96.11-.76.41-1.26.74-1.55-2.6-.3-5.33-1.3-5.33-5.8 0-1.28.46-2.33 1.22-3.15-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.29 1.2a11.43 11.43 0 0 1 5.99 0c2.29-1.52 3.29-1.2 3.29-1.2.65 1.65.24 2.87.12 3.17.76.82 1.22 1.87 1.22 3.15 0 4.51-2.74 5.49-5.36 5.78.42.36.8 1.08.8 2.18v3.23c0 .31.22.68.81.56A11.5 11.5 0 0 0 12 .5Z" />
-                            </svg>
-                        </a>
-                        <a class="social-btn" href="https://www.linkedin.com/in/malcomtyk21/" aria-label="LinkedIn" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                    d="M4.98 3.5a2.49 2.49 0 1 1 0 4.98 2.49 2.49 0 0 1 0-4.98ZM3.5 8.99h3v11.51h-3V8.99Zm6.01 0h2.88v1.57h.04c.4-.76 1.37-1.57 2.82-1.57 3.01 0 3.57 1.98 3.57 4.56v6.95h-3v-6.16c0-1.47-.03-3.36-2.05-3.36-2.05 0-2.36 1.6-2.36 3.25v6.27h-2.9V8.99Z" />
-                            </svg>
-                        </a>
-                </div>
-            </div>
-        </section>
-        <section id="experiences" class="experiences container">
-            <div class="xp-header">
-                <p class="xp-eyebrow">Education &amp; Work</p>
-                <h2 class="xp-title">My Academic and Professional Journey</h2>
-            </div>
-            <div class="xp-grid">
-                <div class="hero-card xp-card">
-                    <div class="xp-card-header">
-                        <span class="xp-icon" aria-hidden="true">🎓</span>
-                        <h3 class="xp-card-title">Education</h3>
-                    </div>
-                    <ul class="xp-list" aria-label="Education timeline">
-                        <li class="xp-item">
-                            <span class="xp-years">2024–Present</span>
-                            <div class="xp-lines">
-                                <div class="xp-place">National University of Singapore (NUS)</div>
-                                <div class="xp-role">B.Sc. in Business Artificial Intelligence Systems (Formerly Known
-                                    as Information Systems)</div>
-                            </div>
-                        </li>
-                        <li class="xp-item">
-                            <span class="xp-years">2019–2021</span>
-                            <div class="xp-lines">
-                                <div class="xp-place">Singapore Polytechnic (SP)</div>
-                                <div class="xp-role">Diploma in Information Technology Specialising in Data Science and
-                                    Analytics</div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-                <div class="hero-card xp-card">
-                    <div class="xp-card-header">
-                        <span class="xp-icon" aria-hidden="true">💼</span>
-                        <h3 class="xp-card-title">Work Experience</h3>
-                    </div>
-                    <ul class="xp-list" aria-label="Work experience timeline">
-                        <li class="xp-item">
-                            <span class="xp-years">2025-Present</span>
-                            <div class="xp-lines">
-                                <div class="xp-place">Lvl8Studios</div>
-                                <div class="xp-role">Junior Software Engineer</div>
-                            </div>
-                        </li>
-                        <li class="xp-item">
-                            <span class="xp-years">2023-2024</span>
-                            <div class="xp-lines">
-                                <div class="xp-place">MINDEF</div>
-                                <div class="xp-role">Admin Support Assistant</div>
-                            </div>
-                        </li>
-                        <li class="xp-item">
-                            <span class="xp-years">2021-2022</span>
-                            <div class="xp-lines">
-                                <div class="xp-place">Adept Enterprise Solutions</div>
-                                <div class="xp-role">IT Consultant Intern</div>
-                            </div>
-                        </li>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
 
-                    </ul>
-                </div>
-            </div>
-        </section>
+  <!-- ======================================================
+       PAGE SECTIONS (placeholders — filled section by section)
+       ====================================================== -->
+  <main>
+    <!-- ====================================================
+         HERO
+         ==================================================== -->
+    <section id="hero" class="hero">
+      <!-- Tile grid background -->
+      <div class="hero-tiles" id="heroTiles" aria-hidden="true"></div>
 
-        <section id="projects" class="projects container">
-            <div class="proj-header">
-                <div class="proj-headings">
-                    <p class="proj-eyebrow">Projects</p>
-                    <h2 class="proj-title">Featured & Recent Projects</h2>
-                </div>
-                <div class="proj-controls">
-                    <button class="proj-arrow prev" aria-label="Previous projects" type="button">◄</button>
-                    <button class="proj-arrow next" aria-label="Next projects" type="button">►</button>
-                </div>
-            </div>
+      <!-- Parallax floating images -->
+      <div class="hero-float-container" id="heroFloat" aria-hidden="true">
+        <div class="float-el" data-depth="0.5"  style="top:8%;  left:11%"><img src="images/hero/hero1.jpg" alt="" /></div>
+        <div class="float-el" data-depth="1"    style="top:10%; left:32%"><img src="images/hero/hero2.jpg" alt="" /></div>
+        <div class="float-el" data-depth="2"    style="top:2%;  left:55%"><img src="images/hero/hero3.jpg" alt="" /></div>
+        <div class="float-el" data-depth="1"    style="top:0%;  left:82%"><img src="images/hero/hero4.jpg" alt="" /></div>
+        <div class="float-el" data-depth="1"    style="top:42%; left:2%" ><img src="images/hero/hero5.jpg" alt="" /></div>
+        <div class="float-el" data-depth="2"    style="top:68%; left:76%"><img src="images/hero/hero6.jpg" alt="" /></div>
+        <div class="float-el" data-depth="4"    style="top:72%; left:14%"><img src="images/hero/hero7.jpg" alt="" /></div>
+        <div class="float-el" data-depth="1"    style="top:78%; left:50%"><img src="images/hero/hero8.jpg" alt="" /></div>
+      </div>
 
-            <div class="proj-row" id="projectsRow">
-                <article class="hero-card proj-card">
-                    <div class="proj-cover"><img src="./images/AuroraMart.png" alt="AuroraMart"/></div>
-                    <div class="proj-body">
-                        <h3 class="proj-card-title">Auroramart</h3>
-                        <p style="color: gray;">A modern B2B e-commerce web application designed for both customers and admins. Built using Django with inbuilt ORM.</p>
-                        <div class="proj-tags">
-                            <span class="tag">Django</span>
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                        </div>
-                        <a class="social-btn" href="https://github.com/malcomtyk21/IS2108-Project-Auroramart" aria-label="GitHub" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                    d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.11.8-.25.8-.56v-2.08c-3.26.71-3.95-1.57-3.95-1.57-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.22 1.8 1.22 1.04 1.78 2.73 1.26 3.4.96.11-.76.41-1.26.74-1.55-2.6-.3-5.33-1.3-5.33-5.8 0-1.28.46-2.33 1.22-3.15-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.29 1.2a11.43 11.43 0 0 1 5.99 0c2.29-1.52 3.29-1.2 3.29-1.2.65 1.65.24 2.87.12 3.17.76.82 1.22 1.87 1.22 3.15 0 4.51-2.74 5.49-5.36 5.78.42.36.8 1.08.8 2.18v3.23c0 .31.22.68.81.56A11.5 11.5 0 0 0 12 .5Z" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="hero-card proj-card">
-                    <div class="proj-cover"><img src="./images/GroupSync.png" alt="GroupSync"/></div>
-                    <div class="proj-body">
-                        <h3 class="proj-card-title">GroupSync</h3>
-                        <p style="color: gray;">A collaborative planning web application designed for users to create common tasks and manage group activities efficiently.</p>
-                        <div class="proj-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">NextJs</span>
-                            <span class="tag">TailWind CSS</span>
-                        </div>
-                        <a class="social-btn" href="https://groupsync-7124.vercel.app/" aria-label="Web" target="_blank" rel="noopener" style="text-decoration: none;">
-                            <span class="material-symbols-outlined">language</span>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="hero-card proj-card">
-                    <div class="proj-cover"><img src="./images/Calculator.png" alt="Calculator"/></div>
-                    <div class="proj-body">
-                        <h3 class="proj-card-title">Calculator</h3>
-                        <p style="color: gray;">A modern calculator application built with JavaScript, styled using CSS for a sleek and responsive user interface.</p>
-                        <div class="proj-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">CSS</span>
-                        </div>
-                        <a class="social-btn" href="https://github.com/malcomtyk21/odin-calculator" aria-label="GitHub" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                        d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.11.8-.25.8-.56v-2.08c-3.26.71-3.95-1.57-3.95-1.57-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.22 1.8 1.22 1.04 1.78 2.73 1.26 3.4.96.11-.76.41-1.26.74-1.55-2.6-.3-5.33-1.3-5.33-5.8 0-1.28.46-2.33 1.22-3.15-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.29 1.2a11.43 11.43 0 0 1 5.99 0c2.29-1.52 3.29-1.2 3.29-1.2.65 1.65.24 2.87.12 3.17.76.82 1.22 1.87 1.22 3.15 0 4.51-2.74 5.49-5.36 5.78.42.36.8 1.08.8 2.18v3.23c0 .31.22.68.81.56A11.5 11.5 0 0 0 12 .5Z" />
-                            </svg>
-                        </a>
-                        <a class="social-btn" href="https://malcomtyk21.github.io/odin-calculator/" aria-label="Web" target="_blank" rel="noopener" style="text-decoration: none;">
-                            <span class="material-symbols-outlined">language</span>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="hero-card proj-card">
-                    <div class="proj-cover"><img src="./images/Etch-A-Sketch.png" alt="Etch-A-Sketch"/></div>
-                    <div class="proj-body">
-                        <h3 class="proj-card-title">Etch A Sketch</h3>
-                        <p style="color: gray;">A classic Etch A Sketch drawing application built with JavaScript and styled with CSS for an interactive user experience.</p>
-                        <div class="proj-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">CSS</span>
-                        </div>
-                        <a class="social-btn" href="https://github.com/malcomtyk21/odin-etch-a-sketch" aria-label="GitHub" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                        d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.11.8-.25.8-.56v-2.08c-3.26.71-3.95-1.57-3.95-1.57-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.22 1.8 1.22 1.04 1.78 2.73 1.26 3.4.96.11-.76.41-1.26.74-1.55-2.6-.3-5.33-1.3-5.33-5.8 0-1.28.46-2.33 1.22-3.15-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.29 1.2a11.43 11.43 0 0 1 5.99 0c2.29-1.52 3.29-1.2 3.29-1.2.65 1.65.24 2.87.12 3.17.76.82 1.22 1.87 1.22 3.15 0 4.51-2.74 5.49-5.36 5.78.42.36.8 1.08.8 2.18v3.23c0 .31.22.68.81.56A11.5 11.5 0 0 0 12 .5Z" />
-                            </svg>
-                        </a>
-                        <a class="social-btn" href="https://malcomtyk21.github.io/odin-etch-a-sketch/" aria-label="Web" target="_blank" rel="noopener" style="text-decoration: none;">
-                            <span class="material-symbols-outlined">language</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
-    <footer class="site-footer">
-        <div class="container footer-wrap">
-            <div class="footer-left">
-                <p class="footer-label">Contact Me:</p>
-                <a class="footer-email" href="mailto:malcom_tan@u.nus.edu">malcom_tan@u.nus.edu</a>
-            </div>
-            <div class="footer-social" aria-label="Social links">
-                <a class="social-btn" href="https://github.com/malcomtyk21" aria-label="GitHub" target="_blank" rel="noopener">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.11.8-.25.8-.56v-2.08c-3.26.71-3.95-1.57-3.95-1.57-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.22 1.8 1.22 1.04 1.78 2.73 1.26 3.4.96.11-.76.41-1.26.74-1.55-2.6-.3-5.33-1.3-5.33-5.8 0-1.28.46-2.33 1.22-3.15-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.29 1.2a11.43 11.43 0 0 1 5.99 0c2.29-1.52 3.29-1.2 3.29-1.2.65 1.65.24 2.87.12 3.17.76.82 1.22 1.87 1.22 3.15 0 4.51-2.74 5.49-5.36 5.78.42.36.8 1.08.8 2.18v3.23c0 .31.22.68.81.56A11.5 11.5 0 0 0 12 .5Z" />
-                    </svg>
-                </a>
-                <a class="social-btn" href="https://www.linkedin.com/in/malcomtyk21/" aria-label="LinkedIn" target="_blank" rel="noopener">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M4.98 3.5a2.49 2.49 0 1 1 0 4.98 2.49 2.49 0 0 1 0-4.98ZM3.5 8.99h3v11.51h-3V8.99Zm6.01 0h2.88v1.57h.04c.4-.76 1.37-1.57 2.82-1.57 3.01 0 3.57 1.98 3.57 4.56v6.95h-3v-6.16c0-1.47-.03-3.36-2.05-3.36-2.05 0-2.36 1.6-2.36 3.25v6.27h-2.9V8.99Z" />
-                    </svg>
-                </a>
-            </div>
+      <!-- Centre content -->
+      <div class="hero-content">
+        <h1 class="hero-headline">Malcom Tan</h1>
+        <div class="hero-ctas">
+          <a href="https://linkedin.com/in/malcomtyk" class="hero-cta" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/malcomtyk21" class="hero-cta hero-cta--ghost" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
         </div>
-    </footer>
-    <script src="script.js"></script>
-</body>
+      </div>
+    </section>
+    <!-- ====================================================
+         ABOUT ME
+         ==================================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <p class="section-eyebrow">About Me</p>
+        <div class="about-grid">
 
+          <!-- Left: Bio -->
+          <div class="about-bio">
+            <h2 class="section-heading">Who I Am.</h2>
+            <p class="about-lead">
+              Hi, I am Malcom! I'm a Year 3 Computing student at the National University of Singapore, majoring in Business Artificial Intelligence Systems. 
+            </p>
+            <p class="about-body">
+              My tech journey started in my polytechnic studies where I was majoring in Information Technology at Singapore Polytechnic. It was there that I discovered my passion for building applications through business insights from my stakeholders. 
+            </p>  
+            <p class="about-body">
+              I sit at the intersection of technology and business, where I am passionate about building products and systems that don't just work, but create real, measurable value. I am currently keen in Product Management and Data Engineering. 
+            </p>    
+
+            <p class="about-body">
+              Right now, I'm deeply interested in the end-to-end process of product building, from speaking with stakeholders to uncover their pain points, to designing and engineering solutions that directly address them. I believe great technology starts with truly understanding the people it's built for.
+            </p>
+            <p class="about-body">
+              Beyond the school curriculum, I love feeding cats around my neighbourhood and school. 
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ====================================================
+         EXPERIENCE & EDUCATION
+         ==================================================== -->
+    <section id="experience" class="section exp-section">
+      <div class="container">
+        <p class="section-eyebrow">Experience &amp; Education</p>
+        <h2 class="section-heading">My Journey.</h2>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="card card--md timeline-card">
+              <div class="tc-header">
+                <div class="tc-info">
+                  <span class="t-label tc-date">May 2026 — Present</span>
+                  <h3 class="tc-role">IT Business Analyst Intern</h3>
+                  <span class="t-label tc-org">Phillip Nova</span>
+                </div>
+              </div>
+              <div class="tc-body">
+                <div class="tc-body-inner">
+                  <ul class="tc-bullets">
+                    <li>Interned in the Product Development Team</li>
+                    <li>Assisted in gathering and analyzing business requirements</li>
+                    <li>Conduct stakeholder meetings to gather feedback and insights</li>
+                    <li>Developed a User Requirement Specification Workflow to streamline the requirements gathering process</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="tc-toggle" aria-expanded="false">Expand</button>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="card card--md timeline-card">
+              <div class="tc-header">
+                <div class="tc-info">
+                  <span class="t-label tc-date">Aug 2024 — Present</span>
+                  <h3 class="tc-role">Bachelors of Computing, Business AI Systems</h3>
+                  <span class="t-label tc-org">National University of Singapore</span>
+                </div>
+              </div>
+              <div class="tc-body">
+                <div class="tc-body-inner">
+                  <ul class="tc-bullets">
+                    <li>cGPA: 4.34 / 5.00</li>
+                    <li>Honours Grade: Second Upper</li>
+                    <li>Notable Modules Taken: Requirements Analysis For Business IT Systems, Full-Stack Software Engineering for AI I, Full-Stack Software Engineering for AI II, Data Engineering, Data Structures and Algorithms, AI & Machine Learning Techniques I, Digital Transformation and Leadership Communicatin</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="tc-toggle" aria-expanded="false">Expand</button>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="card card--md timeline-card">
+              <div class="tc-header">
+                <div class="tc-info">
+                  <span class="t-label tc-date">Sep 2020 — Feb 2021</span>
+                  <h3 class="tc-role">IT Consultant Intern</h3>
+                  <span class="t-label tc-org">Adept Enterprise Solutions Pte Ltd</span>
+                </div>
+              </div>
+              <div class="tc-body">
+                <div class="tc-body-inner">
+                  <ul class="tc-bullets">
+                    <li>Analyse data files format to identify inconsistencies and improve data quality</li>
+                    <li>Clean data files to ensure accuracy and consistency</li>
+                    <li>Create automated scripts to process data files</li>
+                    <li>Create dashboards to visualize data insights</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="tc-toggle" aria-expanded="false">Expand</button>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="card card--md timeline-card">
+              <div class="tc-header">
+                <div class="tc-info">
+                  <span class="t-label tc-date">Apr 2019 — May 2021</span>
+                  <h3 class="tc-role">Diploma in Information Technology</h3>
+                  <span class="t-label tc-org">Singapore Polytechnic</span>
+                </div>
+              </div>
+              <div class="tc-body">
+                <div class="tc-body-inner">
+                  <ul class="tc-bullets">
+                    <li>Specialised in Data Science & Analytics</li>
+                    <li>cGPA: 3.86 / 4.00</li>
+                    <li>AY19/20 Director Honour Roll</li>
+                    <li>Finalist - Polyfintech100 API Hackathon</li>
+                    <li>Notable Modules Taken: Front-End Web Development, Back-End Web Development, Full-Stack Web Development Project, Data Visualisation, Deep Learning, Artificial Intelligence & Machine Learning, DevOps & Automation for AI, Data Structures & Algorithms</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="tc-toggle" aria-expanded="false">Expand</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ====================================================
+         SKILLS
+         ==================================================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <p class="section-eyebrow">What I Work With</p>
+        <h2 class="section-heading">Skills.</h2>
+      </div>
+
+      <!-- Marquee rows — full bleed, outside container -->
+      <div class="marquee-rows">
+
+        <!-- Row 1 → left -->
+        <div class="marquee-row">
+          <div class="marquee-track marquee-left" data-speed="22">
+            <div class="marquee-content">
+              <span class="m-skill">Python</span><span class="m-sep">▪</span>
+              <span class="m-skill">JavaScript</span><span class="m-sep">▪</span>
+              <span class="m-skill">TypeScript</span><span class="m-sep">▪</span>
+              <span class="m-skill">Java</span><span class="m-sep">▪</span>
+              <span class="m-skill">SQL</span><span class="m-sep">▪</span>
+              <span class="m-skill">HTML / CSS</span><span class="m-sep">▪</span>
+              <span class="m-skill">React</span><span class="m-sep">▪</span>
+              <span class="m-skill">Next.js</span><span class="m-sep">▪</span>
+              <span class="m-skill">Django</span><span class="m-sep">▪</span>
+              <span class="m-skill">Flask</span><span class="m-sep">▪</span>
+              <span class="m-skill">Node.js</span><span class="m-sep">▪</span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+              <span class="m-skill">Python</span><span class="m-sep">▪</span>
+              <span class="m-skill">JavaScript</span><span class="m-sep">▪</span>
+              <span class="m-skill">TypeScript</span><span class="m-sep">▪</span>
+              <span class="m-skill">Java</span><span class="m-sep">▪</span>
+              <span class="m-skill">SQL</span><span class="m-sep">▪</span>
+              <span class="m-skill">HTML / CSS</span><span class="m-sep">▪</span>
+              <span class="m-skill">React</span><span class="m-sep">▪</span>
+              <span class="m-skill">Next.js</span><span class="m-sep">▪</span>
+              <span class="m-skill">Django</span><span class="m-sep">▪</span>
+              <span class="m-skill">Flask</span><span class="m-sep">▪</span>
+              <span class="m-skill">Node.js</span><span class="m-sep">▪</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 → right -->
+        <div class="marquee-row">
+          <div class="marquee-track marquee-right" data-speed="28">
+            <div class="marquee-content">
+              <span class="m-skill">PostgresSQL</span><span class="m-sep">▪</span>
+              <span class="m-skill">MySQL</span><span class="m-sep">▪</span>
+              <span class="m-skill">MongoDB</span><span class="m-sep">▪</span>
+              <span class="m-skill">Apache Spark</span><span class="m-sep">▪</span>
+              <span class="m-skill">Kafka</span><span class="m-sep">▪</span>
+              <span class="m-skill">Airflow</span><span class="m-sep">▪</span>
+              <span class="m-skill">Hadoop</span><span class="m-sep">▪</span>
+              <span class="m-skill">Tableau</span><span class="m-sep">▪</span>
+              <span class="m-skill">Pandas</span><span class="m-sep">▪</span>
+              <span class="m-skill">Numpy</span><span class="m-sep">▪</span>
+              <span class="m-skill">Excel</span><span class="m-sep">▪</span>
+            </div>
+            <div class="marquee-content">
+              <span class="m-skill">PostgresSQL</span><span class="m-sep">▪</span>
+              <span class="m-skill">MySQL</span><span class="m-sep">▪</span>
+              <span class="m-skill">MongoDB</span><span class="m-sep">▪</span>
+              <span class="m-skill">Apache Spark</span><span class="m-sep">▪</span>
+              <span class="m-skill">Kafka</span><span class="m-sep">▪</span>
+              <span class="m-skill">Airflow</span><span class="m-sep">▪</span>
+              <span class="m-skill">Hadoop</span><span class="m-sep">▪</span>
+              <span class="m-skill">Tableau</span><span class="m-sep">▪</span>
+              <span class="m-skill">Pandas</span><span class="m-sep">▪</span>
+              <span class="m-skill">Numpy</span><span class="m-sep">▪</span>
+              <span class="m-skill">Excel</span><span class="m-sep">▪</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 → left -->
+        <div class="marquee-row">
+          <div class="marquee-track marquee-left" data-speed="18">
+            <div class="marquee-content">
+              <span class="m-skill">Git</span><span class="m-sep">▪</span>
+              <span class="m-skill">GitHub</span><span class="m-sep">▪</span>
+              <span class="m-skill">Figma</span><span class="m-sep">▪</span>
+              <span class="m-skill">Postman</span><span class="m-sep">▪</span>
+              <span class="m-skill">Agile / Scrum</span><span class="m-sep">▪</span>
+              <span class="m-skill">User Research</span><span class="m-sep">▪</span>
+              <span class="m-skill">Jira</span><span class="m-sep">▪</span>
+              <span class="m-skill">Confluence</span><span class="m-sep">▪</span>
+              <span class="m-skill">Requirements Gathering/Analysis</span><span class="m-sep">▪</span>
+              <span class="m-skill">Microsoft Copilot Studio</span><span class="m-sep">▪</span>
+              <span class="m-skill">Power Automate</span><span class="m-sep">▪</span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+              <span class="m-skill">Git</span><span class="m-sep">▪</span>
+              <span class="m-skill">GitHub</span><span class="m-sep">▪</span>
+              <span class="m-skill">Figma</span><span class="m-sep">▪</span>
+              <span class="m-skill">Postman</span><span class="m-sep">▪</span>
+              <span class="m-skill">Agile / Scrum</span><span class="m-sep">▪</span>
+              <span class="m-skill">User Research</span><span class="m-sep">▪</span>
+              <span class="m-skill">JIRA</span><span class="m-sep">▪</span>
+              <span class="m-skill">Product Roadmapping</span><span class="m-sep">▪</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ====================================================
+         FEATURED PROJECTS
+         ==================================================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <p class="section-eyebrow">Featured Work</p>
+        <h2 class="section-heading">Projects.</h2>
+
+        <div class="projects-grid">
+
+          <!-- Kueru -->
+          <article class="proj-card">
+            <div class="proj-image" style="background: #ffffff;">
+              <img src="images/Kueru.png" alt="Kueru screenshot" />
+            </div>
+            <div class="proj-divider"></div>
+            <div class="proj-body">
+              <h3 class="proj-title">Kueru</h3>
+              <p class="proj-desc">Full-stack social media app for connecting users through food communities.</p>
+              <div class="proj-stack">
+                <span class="chip">Next.js</span>
+                <span class="chip">Firebase</span>
+              </div>
+              <div class="proj-actions">
+                <a href="#" class="proj-icon-btn proj-icon-btn--ghost" aria-label="Live demo">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </a>
+                <a href="https://github.com/Synfoxius/Kueru" class="proj-icon-btn proj-icon-btn--ghost" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- GroupSync -->
+          <article class="proj-card">
+            <div class="proj-image">
+              <img src="images/GroupSync.jpeg" alt="GroupSync screenshot" />
+            </div>
+            <div class="proj-divider"></div>
+            <div class="proj-body">
+              <h3 class="proj-title">GroupSync</h3>
+              <p class="proj-desc">Collaborative scheduling app that helps teams find common availability and plan together.</p>
+              <div class="proj-stack">
+                <span class="chip">Supabase</span>
+                <span class="chip">Next.js</span>
+                <span class="chip">TypeScript</span>
+              </div>
+              <div class="proj-actions">
+                <a href="https://groupsync-7124.vercel.app/" class="proj-icon-btn proj-icon-btn--ghost" aria-label="Live demo">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- AuroraMart -->
+          <article class="proj-card">
+            <div class="proj-image" style="background: #ffffff;">
+              <img src="images/AuroraMart.png" alt="AuroraMart screenshot" />
+            </div>
+            <div class="proj-divider"></div>
+            <div class="proj-body">
+              <h3 class="proj-title">AuroraMart</h3>
+              <p class="proj-desc">Full-stack e-commerce platform with product listings, cart management, and checkout flow.</p>
+              <div class="proj-stack">
+                <span class="chip">Django</span>
+                <span class="chip">Python</span>
+                <span class="chip">SQLite</span>
+              </div>
+              <div class="proj-actions">
+                <a href="https://github.com/malcomtyk21/IS2108-Project-Auroramart" class="proj-icon-btn proj-icon-btn--ghost" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+        <!-- Left: name + tagline -->
+        <div class="footer-brand">
+          <span class="footer-logo">Malcom Tan</span>
+          <p class="footer-tagline">Building products. Writing code.</p>
+        </div>
+
+        <!-- Right: nav + socials -->
+        <div class="footer-right">
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+          </nav>
+          <div class="footer-socials">
+            <a href="https://github.com/malcomtyk21" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/malcomtyk" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 Malcom Tan. All rights reserved.</span>
+        <span class="footer-credit">Built with HTML, CSS &amp; JS</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
